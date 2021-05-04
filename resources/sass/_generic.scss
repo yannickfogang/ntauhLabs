@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4 {
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    height: 30px;
+    width: 97.5%;
+    border-radius: $default-border-radius;
+    margin: 5px 0;
+    padding: 10px 0 10px 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+    outline: none;
+    opacity: 0.8;
+
+    &:hover, &:active, &:visited, &:focus  {
+        outline: none;
+        border: 1px solid darken($primary-color,0.1);
+    }
+}
+
+button {
+    width: 250px;
+    border: none;
+    height: 45px;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 0;
+    &:hover, &:active, &:visited, &:focus {
+        border: none;
+    }
+}
+
+
+.card {
+    background-color: #FFF;
+    border-radius: $default-border-radius;
+    box-shadow: $card-box-shadow;
+    padding: 20px;
+}
+
+.btn__p {
+    background-color: $primary-color;
+    color: #FFF;
+    font-weight: bold;
+    &:hover, &:active, &:visited, &:focus {
+        background: linear-gradient(to right bottom, darken($primary-color, 5), darken($primary-color, 20))
+    }
+}
+
+.alert__text {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.alert__text__error{
+    color:#ff2d20;
+}
+
